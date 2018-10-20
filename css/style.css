@@ -23,10 +23,16 @@ html, body { height: 100%; }
 
 footer { -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto; }
 
-.content { max-width: 1200px; margin: auto; padding: 0 30px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.content { max-width: 1200px; margin: auto; padding: 0 30px; }
 
 .header__menu li { display: inline-block; }
 .header__menu li a { text-decoration: none; }
+
+header .content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.header__contacts { max-width: 185px; text-align: right; }
+
+img { width: 100%; }
 
 header { background-color: #fefefe; min-height: 119px; }
 
