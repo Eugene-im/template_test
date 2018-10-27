@@ -14,38 +14,39 @@ footer {
   flex: 0 0 auto;
 }
 
-.content{
-    max-width: 1230px;
-    margin: auto;
-    padding: 0 30px;
+.content {
+  max-width: 1230px;
+  margin: auto;
+  padding: 0 30px;
 }
 
-.header__menu li{
-    display: inline-block;
-    a{
-        text-decoration: none;
-    }
+.header__menu li {
+  display: inline-block;
+}
+header a {
+  text-decoration: none;
 }
 
-header .content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 119px;
 }
-.header__contacts{
-    max-width: 185px;
-    text-align: right;
-}
-
-img{
-    width: 100%;
+.header__contacts {
+  max-width: 185px;
+  text-align: right;
 }
 
-.item_block{
-    display: flex;
-    justify-content: space-between;
+img {
+  width: 100%;
 }
 
-.item{
-    max-width: 370px;
+.item_block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  max-width: 370px;
 }

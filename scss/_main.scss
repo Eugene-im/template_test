@@ -1,5 +1,73 @@
-header{
-    background-color: #fefefe;
-    min-height: 119px;
+header {
+  min-height: 119px;
+  box-shadow: 0 1px 46px rgba(0, 0, 0, 0.11);
+  background-color: #fefefe;
 }
 
+.header__logo {
+  max-width: 276px;
+  width: 100%;
+}
+
+.header__menu {
+  max-width: 570px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  a {
+    color: #515151;
+    font-size: 18px;
+    line-height: 60px;
+  }
+}
+
+.header__menu a:hover {
+  color: #000056;
+  border-bottom: 1px solid rgba(0, 0, 56, 0.15);
+}
+
+.contacts__phone {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+}
+.contacts__mail {
+  color: #000056;
+  font-size: 18px;
+}
+
+.contacts__callback {
+  background: transparent;
+  border: transparent;
+  outline: none;
+  color: #000000;
+  font-size: 14px;
+  &:hover {
+    border-bottom: 1px solid rgba(187, 187, 187, 0.31);
+  }
+}
+
+.phone_ico {
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  background: url(../img/phone-call.png);
+}
+
+h2 {
+  color: rgb(81, 81, 81);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39.21px;
+  text-transform: uppercase;
+  margin: 50px auto 39px;
+  text-align: center;
+}
+h3 {
+  color: rgb(81, 81, 81);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 65px;
+}
