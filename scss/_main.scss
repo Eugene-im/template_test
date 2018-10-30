@@ -62,12 +62,84 @@ h2 {
   font-weight: 700;
   line-height: 39.21px;
   text-transform: uppercase;
-  margin: 50px auto 39px;
+  padding: 50px 0 39px;
   text-align: center;
 }
 h3 {
   color: rgb(81, 81, 81);
   font-size: 20px;
   font-weight: 700;
-  line-height: 65px;
+}
+
+.item_text {
+  padding: 20px 35px 20px 20px;
+  h3 {
+    border-bottom: 1px solid rgb(229, 229, 229);
+    padding-bottom: 14px;
+    margin-bottom: 19px;
+  }
+  li {
+    text-transform: uppercase;
+    list-style-type: none;
+    a {
+      border-bottom: 1px solid rgb(229, 229, 229);
+      text-decoration: none;
+      color: rgb(0, 0, 86);
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+.article.about_company {
+  background-color: rgb(246, 246, 246);
+  margin-top: 28px;
+}
+.about_company_text {
+  max-width: 726px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  p:first-child {
+    margin-bottom: 16px;
+  }
+}
+
+.about_tab_slideblock {
+  position: relative;
+  min-height: 170px;
+  .about_tab_slide {
+    position: absolute;
+    min-height: 170px;
+    width: 100%;
+    background: #f6f6f6;
+    z-index: 1;
+  }
+}
+
+.about_tab nav {
+  display: flex;
+  justify-content: center;
+  li {
+    padding: 23px 0;
+    text-align: center;
+    list-style-type: none;
+    a {
+      display: block;
+      padding: 25px 15px;
+      border-bottom: 1px solid rgb(246, 246, 246);
+      color: rgb(144, 144, 144);
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+  a:hover {
+    color: rgb(0, 0, 86);
+    border-bottom: 1px solid rgb(0, 0, 86);
+  }
+}
+
+.active {
+  z-index: 2;
 }
