@@ -107,6 +107,8 @@ h3 {
 
 .about_tab_slideblock {
   position: relative;
+  display: flex;
+  align-content: center;
   min-height: 170px;
   .about_tab_slide {
     position: absolute;
@@ -124,7 +126,7 @@ h3 {
     padding: 23px 0;
     text-align: center;
     list-style-type: none;
-    a {
+    span {
       display: block;
       padding: 25px 15px;
       border-bottom: 1px solid rgb(246, 246, 246);
@@ -134,12 +136,47 @@ h3 {
       text-decoration: none;
     }
   }
-  a:hover {
+  span:hover, span.act {
     color: rgb(0, 0, 86);
     border-bottom: 1px solid rgb(0, 0, 86);
   }
 }
 
-.active {
+.about_tab_slideblock .active {
   z-index: 2;
+}
+
+.slick-prev,
+.slick-next {
+  height: 24px;
+  width: 13px;
+  // background: url("../img/arrow.png") center no-repeat;
+}
+
+.slick-next {
+  transform: translate(0, -50%) rotate(180deg);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "";
+}
+
+.about_tab_slideblock .about_tab_slide {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background: #202320;
+  .content {
+    min-height: 100px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    *{
+      display: block;
+    }
+  }
 }

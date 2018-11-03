@@ -51,7 +51,7 @@ html, body { font-family: Arsenal, sans-serif; font-size: 16px; font-weight: 400
 /* Icons */
 @font-face { font-family: "slick"; src: url("../fonts/slick.eot"); src: url("../fonts/slick.eot?#iefix") format("embedded-opentype"), url("../fonts/slick.woff") format("woff"), url("../fonts/slick.ttf") format("truetype"), url("../fonts/slick.svg#slick") format("svg"); font-weight: normal; font-style: normal; }
 /* Arrows */
-.slick-prev, .slick-next { position: absolute; display: block; height: 20px; width: 20px; line-height: 0px; font-size: 0px; cursor: pointer; background: transparent; color: transparent; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); padding: 0; border: none; outline: none; }
+.slick-prev, .slick-next { position: absolute; display: block; height: 20px; width: 20px; line-height: 0px; font-size: 0px; cursor: pointer; background: transparent; color: transparent; top: 50%; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); padding: 0; border: none; outline: none; background: url("../img/arrow.png") center no-repeat; }
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus { outline: none; background: transparent; color: transparent; }
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before { opacity: 1; }
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before { opacity: 0.25; }
@@ -134,14 +134,26 @@ h3 { color: #515151; font-size: 20px; font-weight: 700; }
 .about_company_text { max-width: 726px; width: 100%; margin: auto; text-align: center; }
 .about_company_text p:first-child { margin-bottom: 16px; }
 
-.about_tab_slideblock { position: relative; min-height: 170px; }
+.about_tab_slideblock { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-line-pack: center; align-content: center; min-height: 170px; }
 .about_tab_slideblock .about_tab_slide { position: absolute; min-height: 170px; width: 100%; background: #f6f6f6; z-index: 1; }
 
 .about_tab nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .about_tab nav li { padding: 23px 0; text-align: center; list-style-type: none; }
-.about_tab nav li a { display: block; padding: 25px 15px; border-bottom: 1px solid #f6f6f6; color: #909090; font-weight: 700; text-transform: uppercase; text-decoration: none; }
-.about_tab nav a:hover { color: #000056; border-bottom: 1px solid #000056; }
+.about_tab nav li span { display: block; padding: 25px 15px; border-bottom: 1px solid #f6f6f6; color: #909090; font-weight: 700; text-transform: uppercase; text-decoration: none; }
+.about_tab nav span:hover, .about_tab nav span.act { color: #000056; border-bottom: 1px solid #000056; }
 
-.active { z-index: 2; }
+.about_tab_slideblock .active { z-index: 2; }
+
+.slick-prev, .slick-next { height: 24px; width: 13px; }
+
+.slick-next { -webkit-transform: translate(0, -50%) rotate(180deg); transform: translate(0, -50%) rotate(180deg); }
+
+.slick-prev:before, .slick-next:before { content: ""; }
+
+.about_tab_slideblock .about_tab_slide { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+footer { background: #202320; }
+footer .content { min-height: 100px; padding: 10px 15px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+footer .content * { display: block; }
 
 /*# sourceMappingURL=style.css.map */
